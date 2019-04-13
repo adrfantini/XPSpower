@@ -1,5 +1,6 @@
 #Rule for activating / deactivating power saving on battery
-# runs /bin/XPSpower
+# this rule runs /usr/bin/XPSpower
+# this rule is /root/XPSpower/XPSpower.rules
 #Other tunables are in kernel line, module load etc.
 #SUBSYSTEM=="power_supply", ATTR{status}=="Discharging", RUN+="/bin/XPSpower auto"
 #SUBSYSTEM=="power_supply", ATTR{status}=="Charging", RUN+="/bin/XPSpower auto"
